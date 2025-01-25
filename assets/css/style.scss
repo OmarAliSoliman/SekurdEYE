@@ -557,6 +557,7 @@ body.modal-open .mm-slideout {
       font-weight: 300;
       padding: 14px 40px;
       border-radius: 45px;
+      display: inline-block;
     }
     .header_links_demo {
       background-color: #1429a6;
@@ -598,6 +599,9 @@ body.modal-open .mm-slideout {
       // width: 900px;
     }
   }
+  .header_img_on_mobile {
+    display: none;
+  }
 }
 
 .our_services {
@@ -613,8 +617,9 @@ body.modal-open .mm-slideout {
   .top_section_parent_img {
     position: absolute;
     left: 50%;
-    top: -70%;
-    transform: translate(-50%, 0);
+    top: 50%;
+    transform: translate(-50%, -70%);
+    opacity: 0.3;
   }
   .section_header {
     text-align: center;
@@ -675,8 +680,18 @@ body.modal-open .mm-slideout {
     transform: translate(-50%, 0);
     z-index: 4;
     border: 1px solid #fff;
+    transition: all 0.3s ease-in-out;
     img {
       // filter: grayscale(1) invert(1);
+    }
+  }
+  &:hover {
+    .card_icon {
+      background-image: linear-gradient(
+        to bottom,
+        rgba(#ffffff, 0.52),
+        rgba(#5390d9, 0.64)
+      );
     }
   }
 }
@@ -684,6 +699,7 @@ body.modal-open .mm-slideout {
 .pixel_by_pixel {
   background-color: #111163;
   padding: 70px 0;
+  @extend %backgroundImage;
   .section_header {
     margin-bottom: 45p;
     h5 {
@@ -712,6 +728,9 @@ body.modal-open .mm-slideout {
         margin-left: 10px;
         font-weight: 300;
       }
+    }
+    .accordion-button::after {
+      filter: invert(1) grayscale(1);
     }
     .number {
       width: 40px;
@@ -808,6 +827,8 @@ body.modal-open .mm-slideout {
   }
   .section_header {
     margin-bottom: 60px;
+    position: relative;
+    z-index: 3;
     h5 {
       font-size: 2.4rem;
       color: #fff;
@@ -819,6 +840,8 @@ body.modal-open .mm-slideout {
 .why_choose_sekurd_card {
   align-items: flex-start;
   margin-bottom: 60px;
+  position: relative;
+  z-index: 3;
   .card_icon {
     display: inline-flex;
     margin-right: 15px;
@@ -890,7 +913,7 @@ body.modal-open .mm-slideout {
   background-color: #111163;
   position: relative;
   padding: 80px 0;
-
+  overflow: hidden;
   .container-fluid {
     padding-right: 0;
   }
@@ -901,6 +924,7 @@ body.modal-open .mm-slideout {
     position: relative;
     .frame {
       position: absolute;
+      display: none;
       top: 50%;
       transform: translate(0, -50%);
       left: 0;
@@ -950,13 +974,17 @@ body.modal-open .mm-slideout {
           width: 100px;
         }
       }
+      &.dotactive {
+        &::after {
+          width: 100px;
+        }
+      }
     }
   }
   .swiper {
     margin: 100px 0;
-    width: 850px;
-    height: 600px;
     margin-left: auto;
+    width: 850px;
     overflow: visible;
     /* Allow visibility outside the container */
   }
@@ -964,33 +992,48 @@ body.modal-open .mm-slideout {
   .swiper .card_img {
     position: relative;
     // padding: 50px 0;
+    height: 600px;
     width: 100%;
     // &::after{
     //   position: absolute;
     //   content: "";
     //   width: 100%;
     //   height: 100%;
- 
+
     // }
-    .card_content{
+    .line {
+      position: absolute;
+      top: 0;
+      left: 40px;
+      z-index: 3;
+      img {
+        height: 480px;
+      }
+    }
+    .card_content {
       position: absolute;
       top: 0;
       left: 0;
       z-index: 8;
       display: flex;
-      align-items: flex-end;
+      align-items: flex-start;
+      flex-direction: column;
+      justify-content: flex-end;
       height: 100%;
+      padding: 40px;
+      padding-left: 80px;
       width: 100%;
-      background-color: rgba(#0C0C6866, .5);
+      background-color: rgba(#0c0c6866, 0.5);
       z-index: 4;
-      h5{
+      h5 {
         color: #fff;
-        font-weight: 500;
-        font-size: 1.2rem;
+        font-weight: 600;
+        font-size: 2rem;
       }
-      p{
+      p {
         color: #fff;
-        font-size: .9rem;
+        font-size: 0.9rem;
+        font-weight: 300;
       }
     }
   }
@@ -1068,6 +1111,7 @@ body.modal-open .mm-slideout {
 .dark_web {
   background-color: #111163;
   padding: 100px 0 120px 0;
+  padding-bottom: 20px;
   position: relative;
   .fortify_svg {
     position: absolute;
@@ -1108,7 +1152,7 @@ body.modal-open .mm-slideout {
 .custom_footer {
   background-color: rgb(17, 17, 99, 1);
   padding: 100px 0;
-  padding-top: 0;
+  // padding-top: 0;
   .footer_logo {
     img {
       margin-bottom: 15px;
@@ -1126,6 +1170,29 @@ body.modal-open .mm-slideout {
         border: 1px solid #fff;
         border-radius: 5px;
         margin-right: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        transition: all 0.3s ease-in-out;
+        a {
+          display: block;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+        }
+        img {
+          margin-bottom: 0 !important;
+          width: 60%;
+          margin: auto;
+          margin-top: -2px;
+        }
+        &:hover {
+          background-color: #2b4fc9;
+        }
       }
     }
   }
@@ -1164,6 +1231,7 @@ body.modal-open .mm-slideout {
       background-color: #fff;
       border-radius: 24px;
       width: 500px;
+      max-width: 100%;
       position: relative;
       button {
         position: absolute;
@@ -1204,6 +1272,185 @@ body.modal-open .mm-slideout {
 // =============================================================
 // =============================================================
 // =============================================================
+@media (max-width: 1600px) {
+  html {
+    font-size: 14px;
+  }
+  .custom_header .half_circle_header {
+    width: 35%;
+  }
+}
+
+@media (max-width: 1100px) {
+  .industries .wrapper {
+    padding-left: 0;
+  }
+  .industries .swiper {
+    width: 600px;
+  }
+  .industries .swiper .card_img {
+    height: 500px;
+  }
+  .industries .swiper .card_img .line img {
+    height: 380px;
+  }
+  .custom_footer .news_letter .form_group {
+    height: 65px;
+  }
+  .custom_footer .news_letter .form_group button {
+    width: 113px;
+  }
+  .firtify_your_business .firtify_your_business_content .head {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 991px) {
+  html {
+    font-size: 13px;
+  }
+  .custom_navbar {
+    .linkslis,
+    .get_demo {
+      display: none;
+    }
+  }
+  .custom_header .header_content {
+    z-index: 7;
+  }
+  .custom_header .header_img {
+    opacity: 0.4;
+  }
+  .d-none-on-mobile {
+    display: none;
+  }
+  .header_img_on_mobile {
+    display: block !important;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    img {
+      opacity: 0.3;
+    }
+  }
+  .custom_header .header_content h5,
+  .our_services .section_header h5,
+  .why_choose_sekurd .section_header h5,
+  .dark_web .dark_web_content h5, .testemonial .section_header h5, .industries .section_header h5 {
+    font-size: 3rem;
+  }
+  .custom_header .header_content h5 {
+    line-height: 50px;
+  }
+  .custom_header {
+    height: 85vh;
+  }
+  .firtify_your_business .firtify_your_business_img .card_img img {
+    width: 100%;
+  }
+  .firtify_your_business .firtify_your_business_img .card_img {
+    height: 500px;
+    margin-bottom: 30px;
+  }
+  .why_choose_sekurd_card {
+    margin-bottom: 30px;
+  }
+  .dont_wait .dont_wait_img {
+    text-align: right;
+    img {
+      width: 60%;
+    }
+  }
+  .industries .section_header {
+    margin-bottom: 0;
+  }
+  .dark_web .dark_web_content h5 {
+    margin-bottom: 20px;
+  }
+  .custom_footer .news_letter {
+    padding-left: 0;
+    margin-top: 30px;
+  }
+  .dark_web .dark_web_content h5,
+  .firtify_your_business .firtify_your_business_content .head {
+    br {
+      display: none;
+    }
+  }
+  .industries .swiper .card_img .card_content h5, .industries .swiper .card_img .card_content p{
+    width: 70%;
+  }
+  .industries .swiper .card_img .card_content{
+    padding-left: 20px;
+  }
+  .industries .swiper .card_img .line{
+    img{
+      height: 330px;
+    }
+  }
+}
+
+@media(max-width: 600px) {
+  // html{
+  //   font-size: 12px;
+  // }
+  .custom_header{
+    height: 90vh;
+  }
+  .custom_header .half_circle_header{
+    width: 100%;
+  }
+  .custom_header .header_img_on_mobile{
+    z-index: 6;
+  }
+  .firtify_your_business .firtify_your_business_img .card_img{
+    height: 400px;
+  }
+  .why_choose_sekurd_card .card_icon{
+    width: 100px;
+  }
+  .industries .section_header{
+    margin-bottom: 90px;
+  }
+  .custom_footer .footer_links h5{
+    margin-top: 40px;
+  }
+  .custom_header .header_links .header_links_packaged{
+    margin-top: 20px;
+  }
+  .custom_header .header_content h5{
+    font-size: 2.2rem;
+    line-height: 40px;
+  }
+  .custom_header .header_content p{
+    font-size: 1.6rem;
+  }
+  .our_services .section_header h5, .pixel_by_pixel .section_header h5, .firtify_your_business .firtify_your_business_content .head, .why_choose_sekurd .section_header h5{
+    font-size: 2.2rem;
+  }
+  .testemonial{
+    padding-top: 60px;
+  }
+  .order-mobile-second{
+    order: 2;
+  }
+  .order-mobile-first{
+    order: 1;
+  }
+  .our_services .slick-slide{
+    margin: 0 10px;
+  }
+  .industries .swiper .card_img{
+    height: 400px;
+  }
+  .industries .swiper{
+    margin-top: 40px;
+  }
+  .industries .swiper .card_img .card_content h5, .industries .swiper .card_img .card_content p{
+    width: 50%;
+  }
+}
 
 // =============================================================
 /* Shared styles  */
