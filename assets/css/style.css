@@ -481,6 +481,9 @@ body.modal-open .mm-slideout {
 .custom_navbar .get_demo .logout_btn:hover img {
   filter: grayscale(1) invert(1);
 }
+.custom_navbar .navbar_toggler_btn {
+  display: none;
+}
 
 .top_section_parent {
   position: relative;
@@ -740,7 +743,7 @@ body.modal-open .mm-slideout {
   padding: 32px;
   border-radius: 16px;
   margin-bottom: 43px;
-  min-height: 262px;
+  min-height: 320px;
 }
 .firtify_your_business_card h6,
 .firtify_your_business_card p {
@@ -752,7 +755,7 @@ body.modal-open .mm-slideout {
   margin-top: 15px;
 }
 .firtify_your_business_card p {
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 300;
 }
 
@@ -1275,6 +1278,16 @@ body.modal-open .mm-slideout {
   .industries .swiper .card_img .line img {
     height: 330px;
   }
+  .custom_navbar .navbar-links {
+    justify-content: space-between;
+  }
+  .custom_navbar .navbar-links .navbar_toggler_btn {
+    display: inline-flex;
+  }
+  .custom_navbar .navbar-links .navbar_toggler_btn i {
+    color: #fff;
+    font-size: 2rem;
+  }
 }
 @media (max-width: 600px) {
   .custom_header {
@@ -1332,7 +1345,18 @@ body.modal-open .mm-slideout {
   .industries .swiper .card_img .card_content h5, .industries .swiper .card_img .card_content p {
     width: 50%;
   }
+  .custom_header .header_links a {
+    padding: 14px 10px;
+  }
 }
+.mm-listitem:after {
+  left: 0;
+}
+
+#menu .active a {
+  color: #5c96db;
+}
+
 /* Shared styles  */
 .pixel_by_pixel {
   background-position: center;

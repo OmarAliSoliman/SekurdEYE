@@ -7,9 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- SEO META -->
-  <meta property="title" content="Sekurd" />
-  <meta property="description" content="Sekurd" />
-  <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon" />
+  <meta property="title" content="Sekurd Eye" />
+  <meta property="description" content="Sekurd Eye" />
+  <link rel="shortcut icon" href="./assets/images/favicon.ico" />
   <link rel="stylesheet" href="./assets/css/all.min.css" />
   <!-- for english version please change bootstrap to en bootstrap ./assets/css/bootstrap.min.css -->
   <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
@@ -34,20 +34,38 @@
 
 <body>
 
+  <!-- mobile menu -->
+  <nav id="menu">
+    <ul>
+      <li class="active">
+        <a href="#">Home</a>
+      </li>
+      <li>
+        <a href="#">About Us</a>
+      </li>
+      <li>
+        <a href="#">Features</a>
+      </li>
+      <li>
+        <a href="#">Packages</a>
+      </li>
+      <li>
+        <a href="#">Contact us</a>
+      </li>
+    </ul>
+  </nav>
+
   <div class="custom_navbar">
     <div class="container-fluid pd-100">
       <div class="row align-items-center">
-        <div class="col-sm-12 col-md-8 col-lg-7">
+        <div class="col-sm-12 col-md-12 col-lg-7">
           <nav class="navbar-links d-flex align-items-center">
             <a class="navbarـbrand" href="#">
               <img src="./assets/images/logo 1.svg" alt="logo" />
             </a>
-            <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span></span>
-              <span></span>
-              <span></span>
-            </button> -->
+            <a class="navbar_toggler_btn" href="#menu">
+              <i class="fa-solid fa-bars-staggered"></i>
+            </a>
             <div class="linkslis">
               <ul class="navbar_nav d-flex align-items-center list-unstyled">
                 <li class="nav_item">
@@ -68,7 +86,7 @@
               </ul>
             </div>
         </div>
-        <div class="col-sm-12 col-md-4 col-lg-5">
+        <div class="col-sm-12 col-md-12 col-lg-5">
           <div class="get_demo">
             <a href="" class="get_demo_btn">Schedule a Demo</a>
             <a href="" class="logout_btn"><span>Login</span><img src="./assets/images/Log in.svg" alt=""></a>
@@ -122,15 +140,15 @@
     </div>
     <div class="container-fluid">
       <div class="section_header col-lg-6 mx-auto">
-        <h4>OUR SERVICE</h4>
-        <h5>Shield Your Business Against </h5>
-        <p class="col-lg-8 mx-auto">
+        <h4 data-aos="fade-up">OUR SERVICE</h4>
+        <h5 data-aos="fade-up">Shield Your Business Against </h5>
+        <p data-aos="fade-up" class="col-lg-8 mx-auto">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum congue metus quis accumsan euismod.
           Maecenas sed est mollis, convallis nisi convallis, imperdiet massa.
         </p>
       </div>
       <div class="our_services_cards_slider">
-        <div class="our_services_card">
+        <div class="our_services_card" data-aos="fade-up">
           <div class="card_icon">
             <img src="./assets/images/Cyber Security.svg" alt="">
           </div>
@@ -146,7 +164,7 @@
           <div class="card_icon">
             <img src="./assets/images/Cyber Security.svg" alt="">
           </div>
-          <h5>Social engineering <br/> attacks</h5>
+          <h5>Social engineering <br /> attacks</h5>
         </div>
         <div class="our_services_card">
           <div class="card_icon">
@@ -172,7 +190,7 @@
         </h5>
       </div>
       <div class="accordion" id="accordionExample">
-        <div class="accordion-item">
+        <div class="accordion-item" data-aos="fade-up">
           <h2 class="accordion-header">
             <button class="accordion-button d-flex align-items-center" type="button" data-bs-toggle="collapse"
               data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -184,13 +202,12 @@
             <div class="accordion-body">
               <p>
                 We go beyond simple database leaks by directly monitoring malicious networks, providing the most
-                extensive
-                data to detect the initial point of compromise.
+                extensive data to detect the initial point of compromise.
               </p>
             </div>
           </div>
         </div>
-        <div class="accordion-item">
+        <div class="accordion-item" data-aos="fade-up">
           <h2 class="accordion-header">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
               data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
@@ -200,15 +217,13 @@
           </h2>
           <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
             <div class="accordion-body">
-              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse
-              plugin adds the appropriate classes that we use to style each element. These classes control the overall
-              appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom
-              CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the
-              <code>.accordion-body</code>, though the transition does limit overflow.
+              <p>
+                We deliver the exact date of the breach, sourced directly from the compromised device’s system.
+              </p>
             </div>
           </div>
         </div>
-        <div class="accordion-item">
+        <div class="accordion-item" data-aos="fade-up">
           <h2 class="accordion-header">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
               data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
@@ -218,15 +233,13 @@
           </h2>
           <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
             <div class="accordion-body">
-              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse
-              plugin adds the appropriate classes that we use to style each element. These classes control the overall
-              appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom
-              CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the
-              <code>.accordion-body</code>, though the transition does limit overflow.
+              <p>
+                Identify the operating system of the affected device, ensuring precise and actionable insights.
+              </p>
             </div>
           </div>
         </div>
-        <div class="accordion-item">
+        <div class="accordion-item" data-aos="fade-up">
           <h2 class="accordion-header">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
               data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
@@ -236,15 +249,13 @@
           </h2>
           <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
             <div class="accordion-body">
-              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse
-              plugin adds the appropriate classes that we use to style each element. These classes control the overall
-              appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom
-              CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the
-              <code>.accordion-body</code>, though the transition does limit overflow.
+              <p>
+                We extract and report the username associated with the compromised device.
+              </p>
             </div>
           </div>
         </div>
-        <div class="accordion-item">
+        <div class="accordion-item" data-aos="fade-up">
           <h2 class="accordion-header">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
               data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
@@ -254,15 +265,13 @@
           </h2>
           <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
             <div class="accordion-body">
-              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse
-              plugin adds the appropriate classes that we use to style each element. These classes control the overall
-              appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom
-              CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the
-              <code>.accordion-body</code>, though the transition does limit overflow.
+              <p>
+                Hostname data of the breached device is collected and shared for better tracking and mitigation.
+              </p>
             </div>
           </div>
         </div>
-        <div class="accordion-item">
+        <div class="accordion-item" data-aos="fade-up">
           <h2 class="accordion-header">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
               data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
@@ -272,15 +281,13 @@
           </h2>
           <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
             <div class="accordion-body">
-              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse
-              plugin adds the appropriate classes that we use to style each element. These classes control the overall
-              appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom
-              CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the
-              <code>.accordion-body</code>, though the transition does limit overflow.
+              <p>
+                IPv4 and IPv6 addresses of compromised devices are provided for full visibility and threat assessment
+              </p>
             </div>
           </div>
         </div>
-        <div class="accordion-item">
+        <div class="accordion-item" data-aos="fade-up">
           <h2 class="accordion-header">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
               data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
@@ -290,15 +297,14 @@
           </h2>
           <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
             <div class="accordion-body">
-              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse
-              plugin adds the appropriate classes that we use to style each element. These classes control the overall
-              appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom
-              CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the
-              <code>.accordion-body</code>, though the transition does limit overflow.
+              <p>
+                We locate and disclose the exact malware path that infected the device, aiding in immediate response and
+                cleanup.
+              </p>
             </div>
           </div>
         </div>
-        <div class="accordion-item">
+        <div class="accordion-item" data-aos="fade-up">
           <h2 class="accordion-header">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
               data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
@@ -308,15 +314,13 @@
           </h2>
           <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
             <div class="accordion-body">
-              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse
-              plugin adds the appropriate classes that we use to style each element. These classes control the overall
-              appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom
-              CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the
-              <code>.accordion-body</code>, though the transition does limit overflow.
+              <p>
+                We identify the installed antivirus solutions on the compromised device to assess vulnerabilities.
+              </p>
             </div>
           </div>
         </div>
-        <div class="accordion-item">
+        <div class="accordion-item" data-aos="fade-up">
           <h2 class="accordion-header">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
               data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
@@ -326,11 +330,10 @@
           </h2>
           <div id="collapseNine" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
             <div class="accordion-body">
-              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse
-              plugin adds the appropriate classes that we use to style each element. These classes control the overall
-              appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom
-              CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the
-              <code>.accordion-body</code>, though the transition does limit overflow.
+              <p>
+                Compromised URLs, usernames, and passwords extracted from victims’ browsers are reported, allowing swift
+                credential resets and damage control.
+              </p>
             </div>
           </div>
         </div>
@@ -346,7 +349,7 @@
       <div class="row">
         <div class="col-sm-12 col-md-12 col-lg-6">
           <div class="firtify_your_business_img">
-            <div class="card_img">
+            <div class="card_img" data-aos="fade-down">
               <div class="img_parent">
                 <img src="./assets/images/cleaning-2021-09-02-08-09-16-utc 1.png" alt="">
               </div>
@@ -355,44 +358,51 @@
         </div>
         <div class="col-sm-12 col-md-12 col-lg-6">
           <div class="firtify_your_business_content">
-            <h5 class="head">
+            <h5 class="head" data-aos="fade-up">
               Fortify Your <br /> Business with Dark <br /> Web Intelligence
             </h5>
             <div class="firtify_your_business_cards">
               <div class="row">
                 <div class="col-sm-12 col-md-6 col-lg-6">
-                  <div class="firtify_your_business_card">
+                  <div class="firtify_your_business_card" data-aos="fade-up">
                     <div class="card_icon">
                       <img src="./assets/images/Customize.svg" alt="">
                       <h6>Early Breach Detection</h6>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                      <p>Identify breaches before they become public, allowing for swift action to prevent further
+                        damage.
+                      </p>
                     </div>
                   </div>
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-6">
-                  <div class="firtify_your_business_card">
+                  <div class="firtify_your_business_card" data-aos="fade-up">
                     <div class="card_icon">
                       <img src="./assets/images/Threat.svg" alt="">
                       <h6>Reputation <br /> Protection</h6>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                      <p>Reduce the risk of data leaks that can erode customer trust and tarnish your brand's image.
+                      </p>
                     </div>
                   </div>
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-6">
-                  <div class="firtify_your_business_card">
+                  <div class="firtify_your_business_card" data-aos="fade-up">
                     <div class="card_icon">
                       <img src="./assets/images/Customize.svg" alt="">
                       <h6>Financial <br /> Security</h6>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                      <p>Prevent financial losses from fraudulent activities and ransomware attacks by detecting threats
+                        early.
+                      </p>
                     </div>
                   </div>
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-6">
-                  <div class="firtify_your_business_card">
+                  <div class="firtify_your_business_card" data-aos="fade-up">
                     <div class="card_icon">
                       <img src="./assets/images/Training.svg" alt="">
                       <h6>Compliance <br /> Assurance</h6>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                      <p>Demonstrate proactive risk management to meet data protection regulations like GDPR or HIPAA,
+                        avoiding potential fines and legal repercussions.
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -409,13 +419,13 @@
       <img src="./assets/images/Vector (2).svg" alt="">
     </div>
     <div class="container-fluid pd-100">
-      <div class="section_header col-xl-4 col-lg-6 mx-auto">
+      <div class="section_header col-xl-4 col-lg-6 mx-auto" data-aos="fade-up">
         <h5>Why Choose Sekurd for Dark Web Monitoring?</h5>
       </div>
       <div class="row align-items-center">
         <div class="col-sm-12 col-md-12 col-lg-6">
           <div class="why_choose_sekurd_content">
-            <div class="why_choose_sekurd_card d-flex">
+            <div class="why_choose_sekurd_card d-flex" data-aos="fade-up">
               <div class="card_icon">
                 <img src="./assets/images/24 Hours Service.svg" alt="">
               </div>
@@ -427,7 +437,7 @@
               </div>
             </div>
 
-            <div class="why_choose_sekurd_card d-flex">
+            <div class="why_choose_sekurd_card d-flex" data-aos="fade-up">
               <div class="card_icon">
                 <img src="./assets/images/spoofing 1.svg" alt="">
               </div>
@@ -439,7 +449,7 @@
               </div>
             </div>
 
-            <div class="why_choose_sekurd_card d-flex">
+            <div class="why_choose_sekurd_card d-flex" data-aos="fade-up">
               <div class="card_icon">
                 <img src="./assets/images/spoofing 1.svg" alt="">
               </div>
@@ -451,7 +461,7 @@
               </div>
             </div>
 
-            <div class="why_choose_sekurd_card d-flex">
+            <div class="why_choose_sekurd_card d-flex" data-aos="fade-up">
               <div class="card_icon">
                 <img src="./assets/images/spoofing 1.svg" alt="">
               </div>
@@ -464,7 +474,7 @@
             </div>
 
 
-            <div class="why_choose_sekurd_card d-flex">
+            <div class="why_choose_sekurd_card d-flex" data-aos="fade-up">
               <div class="card_icon">
                 <img src="./assets/images/spoofing 1.svg" alt="">
               </div>
@@ -478,7 +488,7 @@
           </div>
         </div>
         <div class="col-sm-12 col-md-12 col-lg-6">
-          <div class="why_choose_sekurd_img">
+          <div class="why_choose_sekurd_img" data-aos="fade-down">
             <img class="w-90" src="./assets/images/image 2.png" alt="">
           </div>
         </div>
@@ -492,11 +502,11 @@
         style="background-image: url('./assets/images/51d6c53ebb4a5bcf3dc7f363dad42322.jpeg');">
         <div class="row align-items-center">
           <div class="col-sm-12 col-md-6 col-lg-8">
-            <h5>Don’t Wait To Be The Next Breach.</h5>
-            <a href="">Schedule a Demo</a>
+            <h5 data-aos="fade-up">Don’t Wait To Be The Next Breach.</h5>
+            <a data-aos="fade-up" href="">Schedule a Demo</a>
           </div>
           <div class="col-sm-12 col-md-6 col-lg-4">
-            <div class="dont_wait_img">
+            <div class="dont_wait_img" data-aos="fade-up">
               <img src="./assets/images/Hacker Using Laptop.svg" alt="">
             </div>
           </div>
@@ -507,10 +517,10 @@
 
   <div class="industries">
     <div class="container-fluid pd-100">
-      <div class="section_header">
+      <div class="section_header" data-aos="fade-up">
         <h5>Industries at High Risk</h5>
       </div>
-      <div class="wrapper">
+      <div class="wrapper" data-aos="fade-up">
         <div class="frame">
           <!-- <img src="./assets/images/Frame 322.svg" alt=""> -->
         </div>
@@ -742,7 +752,7 @@
       <div class="testemonial_cards">
         <div class="row">
           <div class="col-sm-12 col-md-6 col-lg-6">
-            <div class="testemonial_card">
+            <div class="testemonial_card" data-aos="fade-up">
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum congue metus quis accumsan euismod.
                 Maecenas sed est mollis, convallis nisi convallis, imperdiet massa.
@@ -769,7 +779,7 @@
           </div>
 
           <div class="col-sm-12 col-md-6 col-lg-6">
-            <div class="testemonial_card">
+            <div class="testemonial_card" data-aos="fade-up">
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum congue metus quis accumsan euismod.
                 Maecenas sed est mollis, convallis nisi convallis, imperdiet massa.
@@ -796,7 +806,7 @@
           </div>
 
           <div class="col-sm-12 col-md-6 col-lg-6">
-            <div class="testemonial_card">
+            <div class="testemonial_card" data-aos="fade-up">
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum congue metus quis accumsan euismod.
                 Maecenas sed est mollis, convallis nisi convallis, imperdiet massa.
@@ -823,7 +833,7 @@
           </div>
 
           <div class="col-sm-12 col-md-6 col-lg-6">
-            <div class="testemonial_card">
+            <div class="testemonial_card" data-aos="fade-up">
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum congue metus quis accumsan euismod.
                 Maecenas sed est mollis, convallis nisi convallis, imperdiet massa.
@@ -860,7 +870,7 @@
     <div class="container-fluid pd-100">
       <div class="row align-items-center">
         <div class="col-sm-12 col-md-12 col-lg-5">
-          <div class="dark_web_content">
+          <div class="dark_web_content" data-aos="fade-up">
             <h5>Dark Web <br /> Threats in <br /> Figures</h5>
           </div>
         </div>
@@ -868,7 +878,7 @@
           <div class="dark_web_cards">
             <div class="row">
               <div class="col-sm-12 col-md-6 col-lg-6">
-                <div class="dark_web_card">
+                <div class="dark_web_card" data-aos="fade-up">
                   <h5>+15 Billion</h5>
                   <p>
                     Stolen Credentials are circulating on the dark web, exposing businesses to credential stuffing
@@ -878,7 +888,7 @@
               </div>
 
               <div class="col-sm-12 col-md-6 col-lg-6">
-                <div class="dark_web_card">
+                <div class="dark_web_card" data-aos="fade-up">
                   <h5>+60%</h5>
                   <p>
                     Of the information found on the dark web can harm enterprises directly.
@@ -887,7 +897,7 @@
               </div>
 
               <div class="col-sm-12 col-md-6 col-lg-6">
-                <div class="dark_web_card">
+                <div class="dark_web_card" data-aos="fade-up">
                   <h5>$4.45 Million</h5>
                   <p>
                     Is the average cost of a data breach reached in 2023, with sensitive data leaks driving higher
@@ -897,7 +907,7 @@
               </div>
 
               <div class="col-sm-12 col-md-6 col-lg-6">
-                <div class="dark_web_card">
+                <div class="dark_web_card" data-aos="fade-up">
                   <h5>30,000 websites</h5>
                   <p>
                     Are hacked daily, and many compromised assets are sold in dark web forums.

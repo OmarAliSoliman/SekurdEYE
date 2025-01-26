@@ -98,11 +98,11 @@ $(window).on("load", function () {
   }, 2000);
   var currentDir = $("a").css("direction");
   console.log(currentDir);
-  // new Mmenu("#menu", {
-  //   offCanvas: {
-  //     slidingSubmenus: false,
-  //     position: currentDir == "rtl" ? "left-front" : "right-front",
-  //   },
-  //   theme: "light",
-  // });
+  new Mmenu("#menu", {
+    offCanvas: {
+      slidingSubmenus: false,
+      position: currentDir == "rtl" ? "left-front" : "right-front",
+    },
+    theme: "light",
+  });
 });
