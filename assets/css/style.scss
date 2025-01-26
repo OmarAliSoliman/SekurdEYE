@@ -185,7 +185,7 @@ body.modal-open .mm-slideout {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: $mainColor;
+  background-color: #0d0e72;
   z-index: 999999;
   top: 0;
   transition: all 0.3s ease-in-out;
@@ -461,6 +461,14 @@ body.modal-open .mm-slideout {
     &:hover {
       &::after {
         width: 100%;
+      }
+    }
+    &.active {
+      &::after {
+        width: 100%;
+      }
+      a{
+        color: #5c96db;
       }
     }
   }
