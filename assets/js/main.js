@@ -71,6 +71,7 @@ $(document).ready(function () {
       effect: "cards",
       initialSlide: 2,
       allowTouchMove: false,
+      lazy: true,
     });
 
     // Function to go to the target slide
@@ -82,7 +83,24 @@ $(document).ready(function () {
     $(".industries li").on("click", function () {
       var index = $(this).index();
       goToSlide(index, this);
+      $(".industries video").each(function () {
+        $(this).get(0).pause();
+      });
+      // console.log(
+      //   $($($(".swiper-wrapper .swiper-slide")[index]).get(0)).find("video")[0]
+      // );
+      $($($(".swiper-wrapper .swiper-slide")[index]).get(0))
+        .find("video")[0]
+        .play();
     });
+  }
+
+  if ($(".industries").length) {
+    $(".industries video").each(function () {
+      $(this).get(0).pause();
+    });
+    console.log($($($(".industries video")[2]).get(0))[0]);
+    $($(".dotactivevideo").get(0)).find("video")[0].play();
   }
 
   AOS.init();

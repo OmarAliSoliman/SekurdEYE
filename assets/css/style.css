@@ -1109,6 +1109,9 @@ body.modal-open .mm-slideout {
   justify-content: center;
   text-align: center;
 }
+.custom_footer .footer_logo ul li a i {
+  color: #fff;
+}
 .custom_footer .footer_logo ul li img {
   margin-bottom: 0 !important;
   width: 60%;
@@ -1236,7 +1239,9 @@ body.modal-open .mm-slideout {
   .custom_header .header_content h5,
   .our_services .section_header h5,
   .why_choose_sekurd .section_header h5,
-  .dark_web .dark_web_content h5, .testemonial .section_header h5, .industries .section_header h5 {
+  .dark_web .dark_web_content h5,
+  .testemonial .section_header h5,
+  .industries .section_header h5 {
     font-size: 3rem;
   }
   .custom_header .header_content h5 {
@@ -1275,7 +1280,8 @@ body.modal-open .mm-slideout {
   .firtify_your_business .firtify_your_business_content .head br {
     display: none;
   }
-  .industries .swiper .card_img .card_content h5, .industries .swiper .card_img .card_content p {
+  .industries .swiper .card_img .card_content h5,
+  .industries .swiper .card_img .card_content p {
     width: 70%;
   }
   .industries .swiper .card_img .card_content {
@@ -1296,6 +1302,9 @@ body.modal-open .mm-slideout {
   }
 }
 @media (max-width: 600px) {
+  html {
+    font-size: 11px;
+  }
   .custom_header {
     height: 90vh;
   }
@@ -1327,7 +1336,10 @@ body.modal-open .mm-slideout {
   .custom_header .header_content p {
     font-size: 1.6rem;
   }
-  .our_services .section_header h5, .pixel_by_pixel .section_header h5, .firtify_your_business .firtify_your_business_content .head, .why_choose_sekurd .section_header h5 {
+  .our_services .section_header h5,
+  .pixel_by_pixel .section_header h5,
+  .firtify_your_business .firtify_your_business_content .head,
+  .why_choose_sekurd .section_header h5 {
     font-size: 2.2rem;
   }
   .testemonial {
@@ -1348,11 +1360,28 @@ body.modal-open .mm-slideout {
   .industries .swiper {
     margin-top: 40px;
   }
-  .industries .swiper .card_img .card_content h5, .industries .swiper .card_img .card_content p {
+  .industries .swiper .card_img .card_content h5,
+  .industries .swiper .card_img .card_content p {
     width: 50%;
   }
   .custom_header .header_links a {
     padding: 14px 10px;
+  }
+  .dark_web_card,
+  .firtify_your_business_card {
+    padding: 22px;
+  }
+  .dark_web_card p {
+    line-height: 18px;
+  }
+  .dont_wait .dont_wait_img {
+    display: none;
+  }
+  .firtify_your_business_card {
+    min-height: auto;
+  }
+  .firtify_your_business_card img {
+    width: 60px;
   }
 }
 .mm-listitem:after {
