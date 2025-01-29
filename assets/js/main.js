@@ -68,7 +68,7 @@ $(document).ready(function () {
       spaceBetween: 1, // Spacing between slides
       centeredSlides: false, // Center the active slide
       grabCursor: false,
-      effect: "cards",
+      effect: 'cards',
       initialSlide: 2,
       allowTouchMove: false,
       lazy: true,

@@ -13,6 +13,7 @@ html {
 body {
   font-family: "Poppins", serif;
   font-weight: 400;
+  background-color: #111163;
 }
 
 input:focus,
@@ -873,7 +874,6 @@ body.modal-open .mm-slideout {
 }
 .industries .wrapper .frame {
   position: absolute;
-  display: none;
   top: 50%;
   transform: translate(0, -50%);
   left: 0;
@@ -1178,6 +1178,106 @@ body.modal-open .mm-slideout {
   border-radius: 24px;
 }
 
+.pricing {
+  position: relative;
+  z-index: 7;
+}
+.pricing .pricing_table_wrapper {
+  background-color: #1429a6;
+  padding: 85px 60px;
+  border-radius: 25px;
+  margin-top: 50px;
+}
+.pricing table {
+  width: 100%;
+  min-width: 600px;
+  overflow: auto;
+}
+.pricing table thead {
+  text-align: center;
+}
+.pricing table thead th {
+  border-bottom: 1px solid #5C96DB;
+  padding: 20px 0;
+  vertical-align: middle;
+  width: 25%;
+}
+.pricing table thead p,
+.pricing table thead span {
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+.pricing table thead p {
+  font-weight: 500;
+  font-size: 1rem;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+.pricing table thead p span {
+  font-weight: 300;
+  font-size: 0.9rem;
+}
+.pricing table tbody tr td {
+  text-align: center;
+  border-bottom: 1px solid #5C96DB;
+  padding: 20px 0;
+  vertical-align: middle;
+  width: 25%;
+}
+.pricing table tbody tr td:first-child {
+  text-align: left;
+}
+.pricing table tbody tr td p {
+  color: #fff;
+  font-size: 1rem;
+  margin: 0;
+}
+.pricing table tbody tr:last-child td {
+  border-bottom: 0;
+}
+.pricing table tbody tr:last-child td p {
+  font-size: 0.9rem;
+  font-weight: 300;
+  margin: 0;
+}
+.pricing table tbody tr:last-child td .recomen {
+  display: flex;
+  align-items: center;
+  background-color: #1AA53D;
+  color: #fff;
+  padding: 11px 7px;
+  border-radius: 5px;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+}
+.pricing table tbody tr:last-child td .recomen p {
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+.pricing table tbody tr:last-child td .recomen img {
+  margin-right: 5px;
+}
+.pricing .section_header {
+  text-align: center;
+}
+.pricing .section_header h5 {
+  font-size: 4rem;
+  color: #fff;
+}
+.pricing .section_header p {
+  color: #fff;
+}
+.pricing ::-webkit-scrollbar {
+  width: 1px;
+  height: 1px;
+  background-color: #00142c;
+}
+.pricing ::-webkit-scrollbar-thumb {
+  background-color: #0ec9ac;
+}
+
 @media (max-width: 1600px) {
   html {
     font-size: 14px;
@@ -1299,6 +1399,9 @@ body.modal-open .mm-slideout {
   .custom_navbar .navbar-links .navbar_toggler_btn i {
     color: #fff;
     font-size: 2rem;
+  }
+  .pricing .pricing_table_wrapper {
+    padding: 80px 20px;
   }
 }
 @media (max-width: 600px) {
