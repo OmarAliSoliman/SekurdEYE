@@ -1138,6 +1138,10 @@ body.modal-open .mm-slideout {
 }
 .custom_footer .footer_links ul li a i {
   margin-right: 10px;
+  margin-top: 3px;
+}
+.custom_footer .footer_links ul li .d-flex span {
+  font-size: 0.8rem;
 }
 .custom_footer .news_letter {
   flex-direction: column;
@@ -1149,7 +1153,7 @@ body.modal-open .mm-slideout {
   margin-bottom: 40px;
 }
 .custom_footer .news_letter .form_group {
-  height: 75px;
+  height: 65px;
   background-color: #fff;
   border-radius: 24px;
   width: 500px;
@@ -1160,7 +1164,7 @@ body.modal-open .mm-slideout {
   position: absolute;
   top: 50%;
   transform: translate(0, -50%);
-  right: 10px;
+  right: 5px;
   height: 90%;
   width: 150px;
   border-radius: 24px;

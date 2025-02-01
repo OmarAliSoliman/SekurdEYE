@@ -1228,6 +1228,12 @@ body.modal-open .mm-slideout {
           font-size: 0.9rem;
           i {
             margin-right: 10px;
+            margin-top: 3px;
+          }
+        }
+        .d-flex{
+          span{
+            font-size: .8rem;
           }
         }
       }
@@ -1242,7 +1248,7 @@ body.modal-open .mm-slideout {
       margin-bottom: 40px;
     }
     .form_group {
-      height: 75px;
+      height: 65px;
       background-color: #fff;
       border-radius: 24px;
       width: 500px;
@@ -1252,7 +1258,7 @@ body.modal-open .mm-slideout {
         position: absolute;
         top: 50%;
         transform: translate(0, -50%);
-        right: 10px;
+        right: 5px;
         height: 90%;
         width: 150px;
         border-radius: 24px;
