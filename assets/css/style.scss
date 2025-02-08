@@ -1231,9 +1231,9 @@ body.modal-open .mm-slideout {
             margin-top: 3px;
           }
         }
-        .d-flex{
-          span{
-            font-size: .8rem;
+        .d-flex {
+          span {
+            font-size: 0.8rem;
           }
         }
       }
@@ -1295,7 +1295,7 @@ body.modal-open .mm-slideout {
     thead {
       text-align: center;
       th {
-        border-bottom: 1px solid #5C96DB;
+        border-bottom: 1px solid #5c96db;
         padding: 20px 0;
         vertical-align: middle;
         width: calc(100% / 4);
@@ -1321,41 +1321,41 @@ body.modal-open .mm-slideout {
       tr {
         td {
           text-align: center;
-          border-bottom: 1px solid #5C96DB;
+          border-bottom: 1px solid #5c96db;
           padding: 20px 0;
           vertical-align: middle;
           width: calc(100% / 4);
           &:first-child {
             text-align: left;
           }
-          p{
+          p {
             color: #fff;
             font-size: 1rem;
             margin: 0;
           }
         }
-        &:last-child{
-          td{
+        &:last-child {
+          td {
             border-bottom: 0;
-            p{
-              font-size: .9rem;
+            p {
+              font-size: 0.9rem;
               font-weight: 300;
               margin: 0;
             }
-            .recomen{
+            .recomen {
               display: flex;
               align-items: center;
-              background-color: #1AA53D;
+              background-color: #1aa53d;
               color: #fff;
               padding: 11px 7px;
               border-radius: 5px;
               width: fit-content;
               margin: auto;
-              p{
-                font-size: .8rem;
+              p {
+                font-size: 0.8rem;
                 font-weight: 300;
               }
-              img{
+              img {
                 margin-right: 5px;
               }
             }
@@ -1379,13 +1379,40 @@ body.modal-open .mm-slideout {
     height: 1px;
     background-color: $mainColor;
   }
-  
+
   ::-webkit-scrollbar-thumb {
     background-color: $secondColor;
   }
 }
 
 // =============================================================
+.custom_header_terms {
+  height: 40vh !important;
+  .header_content {
+    align-items: flex-end !important;
+    padding-bottom: 20px;
+  }
+  p {
+    font-size: 1.1rem !important;
+  }
+}
+
+.terms_conditions {
+  background-color: #111163;
+  padding-bottom: 150px;
+  p {
+    color: #fff;
+    margin: 0;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    line-height: 35px;
+    span {
+      display: block;
+      font-weight: 600;
+      font-size: 1.4rem;
+    }
+  }
+}
 // =============================================================
 // =============================================================
 // =============================================================
@@ -1531,7 +1558,7 @@ body.modal-open .mm-slideout {
       }
     }
   }
-  .pricing .pricing_table_wrapper{
+  .pricing .pricing_table_wrapper {
     padding: 80px 20px;
   }
 }
@@ -1621,11 +1648,24 @@ body.modal-open .mm-slideout {
       width: 60px;
     }
   }
-
+  .terms_conditions {
+    padding-bottom: 10px;
+  }
 }
-
+.scheduleButton {
+  cursor: pointer;
+}
 .mm-listitem:after {
   left: 0;
+}
+
+.inner_custom_navbar {
+  .scheduleButton {
+    background-color: #2b4fc9 !important;
+    &:hover{
+      background-color: #fff !important;
+    }
+  }
 }
 
 #menu {

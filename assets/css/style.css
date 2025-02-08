@@ -1201,7 +1201,7 @@ body.modal-open .mm-slideout {
   text-align: center;
 }
 .pricing table thead th {
-  border-bottom: 1px solid #5C96DB;
+  border-bottom: 1px solid #5c96db;
   padding: 20px 0;
   vertical-align: middle;
   width: 25%;
@@ -1224,7 +1224,7 @@ body.modal-open .mm-slideout {
 }
 .pricing table tbody tr td {
   text-align: center;
-  border-bottom: 1px solid #5C96DB;
+  border-bottom: 1px solid #5c96db;
   padding: 20px 0;
   vertical-align: middle;
   width: 25%;
@@ -1248,7 +1248,7 @@ body.modal-open .mm-slideout {
 .pricing table tbody tr:last-child td .recomen {
   display: flex;
   align-items: center;
-  background-color: #1AA53D;
+  background-color: #1aa53d;
   color: #fff;
   padding: 11px 7px;
   border-radius: 5px;
@@ -1280,6 +1280,34 @@ body.modal-open .mm-slideout {
 }
 .pricing ::-webkit-scrollbar-thumb {
   background-color: #0ec9ac;
+}
+
+.custom_header_terms {
+  height: 40vh !important;
+}
+.custom_header_terms .header_content {
+  align-items: flex-end !important;
+  padding-bottom: 20px;
+}
+.custom_header_terms p {
+  font-size: 1.1rem !important;
+}
+
+.terms_conditions {
+  background-color: #111163;
+  padding-bottom: 150px;
+}
+.terms_conditions p {
+  color: #fff;
+  margin: 0;
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  line-height: 35px;
+}
+.terms_conditions p span {
+  display: block;
+  font-weight: 600;
+  font-size: 1.4rem;
 }
 
 @media (max-width: 1600px) {
@@ -1490,9 +1518,23 @@ body.modal-open .mm-slideout {
   .firtify_your_business_card img {
     width: 60px;
   }
+  .terms_conditions {
+    padding-bottom: 10px;
+  }
 }
+.scheduleButton {
+  cursor: pointer;
+}
+
 .mm-listitem:after {
   left: 0;
+}
+
+.inner_custom_navbar .scheduleButton {
+  background-color: #2b4fc9 !important;
+}
+.inner_custom_navbar .scheduleButton:hover {
+  background-color: #fff !important;
 }
 
 #menu .active a {

@@ -103,6 +103,16 @@ $(document).ready(function () {
     $($(".dotactivevideo").get(0)).find("video")[0].play();
   }
 
+  if($(".scheduleButton").length){
+    document.querySelectorAll('.scheduleButton').forEach(item => {
+      item.addEventListener('click', function (e) {
+        e.preventDefault();
+        Calendly.initPopupWidget({ url: 'https://calendly.com/ahmed-sekurd/30min' });
+        return false;
+      });
+    });
+  }
+
   AOS.init();
 });
 
