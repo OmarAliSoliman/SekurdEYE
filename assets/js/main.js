@@ -107,9 +107,116 @@ $(document).ready(function () {
     document.querySelectorAll('.scheduleButton').forEach(item => {
       item.addEventListener('click', function (e) {
         e.preventDefault();
-        Calendly.initPopupWidget({ url: 'https://calendly.com/ahmed-sekurd/30min' });
+        Calendly.initPopupWidget({ url: 'https://calendly.com/sekurd/30min' });
         return false;
       });
+    });
+  }
+
+  if ($(".certificate_proffesional_slider").length) {
+    $(".certificate_proffesional_slider").slick({
+      slidesToShow: 7,
+      slidesToScroll: 7,
+      arrows: false,
+      dots: true,
+      speed: 900,
+      infinite: true,
+      cssEase: "ease-in-out",
+      loop: true,
+      autoplaySpeed: 5000,
+      centerMode: false,
+      autoplay: true,
+      responsive: [
+        // {
+        //   breakpoint: 1920,
+        //   settings: {
+        //     slidesToShow: 5,
+        //     // centerMode: false,
+        //   },
+        // },
+        {
+          breakpoint: 1150,
+          settings: {
+            slidesToShow: 5,
+            slidesToScroll: 4,
+            centerMode: false,
+          },
+        },
+        {
+          breakpoint: 1100,
+          settings: {
+            slidesToShow: 5,
+            slidesToScroll: 3,
+            centerMode: false,
+          },
+        },
+        {
+          breakpoint: 991,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            centerMode: false,
+          },
+        },
+
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            centerMode: false,
+          },
+        },
+      ],
+    });
+  }
+
+  if ($(".acwnologe_by_slider").length) {
+    $(".acwnologe_by_slider").slick({
+      slidesToShow: 4,
+      slidesToScroll: 4,
+      arrows: false,
+      dots: true,
+      speed: 800,
+      infinite: true,
+      cssEase: "ease-in-out",
+      loop: true,
+      autoplaySpeed: 5000,
+      centerMode: false,
+      autoplay: true,
+      // nextArrow: $(".custom_category_arrow .next"),
+      // prevArrow: $(".custom_category_arrow .prev"),
+      responsive: [
+        {
+          breakpoint: 1920,
+          settings: {
+            slidesToShow: 4,
+            centerMode: false,
+          },
+        },
+        {
+          breakpoint: 1100,
+          settings: {
+            slidesToShow: 4,
+            centerMode: false,
+          },
+        },
+        {
+          breakpoint: 991,
+          settings: {
+            slidesToShow: 3,
+            centerMode: false,
+          },
+        },
+
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            centerMode: false,
+          },
+        },
+      ],
     });
   }
 
