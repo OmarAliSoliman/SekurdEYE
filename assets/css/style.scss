@@ -1299,6 +1299,28 @@ body.modal-open .mm-slideout {
         padding: 20px 0;
         vertical-align: middle;
         width: calc(100% / 4);
+        span{
+          font-size: 1.4rem;
+        }
+        button{
+          display: block;
+          background-color: #fff;
+          color: #002047;
+          border-radius: 5px;
+          padding: 10px;
+          border: 0;
+          margin: auto;
+          margin-top: 5px;
+          transition: all .3s ease-in-out;
+          &:hover{
+            background-color: #0c0c68;
+            color: #fff;
+          }
+          &:focus{
+            background-color: #0c0c68;
+            color: #fff;
+          }
+        }
       }
       p,
       span {

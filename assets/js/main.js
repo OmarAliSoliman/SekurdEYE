@@ -107,7 +107,7 @@ $(document).ready(function () {
     document.querySelectorAll('.scheduleButton').forEach(item => {
       item.addEventListener('click', function (e) {
         e.preventDefault();
-        Calendly.initPopupWidget({ url: 'https://calendly.com/sekurd/30min' });
+        Calendly.initPopupWidget({ url: 'https://calendly.com/sekurd/' });
         return false;
       });
     });

@@ -1206,6 +1206,28 @@ body.modal-open .mm-slideout {
   vertical-align: middle;
   width: 25%;
 }
+.pricing table thead th span {
+  font-size: 1.4rem;
+}
+.pricing table thead th button {
+  display: block;
+  background-color: #fff;
+  color: #002047;
+  border-radius: 5px;
+  padding: 10px;
+  border: 0;
+  margin: auto;
+  margin-top: 5px;
+  transition: all 0.3s ease-in-out;
+}
+.pricing table thead th button:hover {
+  background-color: #0c0c68;
+  color: #fff;
+}
+.pricing table thead th button:focus {
+  background-color: #0c0c68;
+  color: #fff;
+}
 .pricing table thead p,
 .pricing table thead span {
   color: #fff;
