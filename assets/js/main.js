@@ -68,7 +68,7 @@ $(document).ready(function () {
       spaceBetween: 1, // Spacing between slides
       centeredSlides: false, // Center the active slide
       grabCursor: false,
-      effect: 'cards',
+      effect: "cards",
       initialSlide: 2,
       allowTouchMove: false,
       lazy: true,
@@ -103,11 +103,13 @@ $(document).ready(function () {
     $($(".dotactivevideo").get(0)).find("video")[0].play();
   }
 
-  if($(".scheduleButton").length){
-    document.querySelectorAll('.scheduleButton').forEach(item => {
-      item.addEventListener('click', function (e) {
+  if ($(".scheduleButton").length) {
+    document.querySelectorAll(".scheduleButton").forEach((item) => {
+      item.addEventListener("click", function (e) {
         e.preventDefault();
-        Calendly.initPopupWidget({ url: 'https://calendly.com/sekurd/' });
+        Calendly.initPopupWidget({
+          url: "https://calendly.com/sekurd?primary_color=1a43f7",
+        });
         return false;
       });
     });
@@ -117,6 +119,122 @@ $(document).ready(function () {
     $(".certificate_proffesional_slider").slick({
       slidesToShow: 7,
       slidesToScroll: 7,
+      arrows: false,
+      dots: true,
+      speed: 900,
+      infinite: true,
+      cssEase: "ease-in-out",
+      loop: true,
+      autoplaySpeed: 5000,
+      centerMode: false,
+      autoplay: true,
+      responsive: [
+        // {
+        //   breakpoint: 1920,
+        //   settings: {
+        //     slidesToShow: 5,
+        //     // centerMode: false,
+        //   },
+        // },
+        {
+          breakpoint: 1150,
+          settings: {
+            slidesToShow: 5,
+            slidesToScroll: 4,
+            centerMode: false,
+          },
+        },
+        {
+          breakpoint: 1100,
+          settings: {
+            slidesToShow: 5,
+            slidesToScroll: 3,
+            centerMode: false,
+          },
+        },
+        {
+          breakpoint: 991,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            centerMode: false,
+          },
+        },
+
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            centerMode: false,
+          },
+        },
+      ],
+    });
+  }
+
+  if ($(".team_certificate_slider").length) {
+    $(".team_certificate_slider").slick({
+      slidesToShow: 7,
+      slidesToScroll: 7,
+      arrows: false,
+      dots: true,
+      speed: 900,
+      infinite: true,
+      cssEase: "ease-in-out",
+      loop: true,
+      autoplaySpeed: 5000,
+      centerMode: false,
+      autoplay: true,
+      responsive: [
+        // {
+        //   breakpoint: 1920,
+        //   settings: {
+        //     slidesToShow: 5,
+        //     // centerMode: false,
+        //   },
+        // },
+        {
+          breakpoint: 1150,
+          settings: {
+            slidesToShow: 5,
+            slidesToScroll: 4,
+            centerMode: false,
+          },
+        },
+        {
+          breakpoint: 1100,
+          settings: {
+            slidesToShow: 5,
+            slidesToScroll: 3,
+            centerMode: false,
+          },
+        },
+        {
+          breakpoint: 991,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            centerMode: false,
+          },
+        },
+
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            centerMode: false,
+          },
+        },
+      ],
+    });
+  }
+
+  if($(".aknowlged_by_slider").length){
+    $(".aknowlged_by_slider").slick({
+      slidesToShow: 4,
+      slidesToScroll: 1,
       arrows: false,
       dots: true,
       speed: 900,
@@ -222,6 +340,16 @@ $(document).ready(function () {
 
   AOS.init();
 });
+
+window.onload = function () {
+  Calendly.initBadgeWidget({
+    url: "https://calendly.com/sekurd?primary_color=1a43f7",
+    text: "Talk to us",
+    color: "#0069ff",
+    textColor: "#ffffff",
+    branding: false,
+  });
+};
 
 $(window).on("load", function () {
   var currentDir = $("body").css("direction");
