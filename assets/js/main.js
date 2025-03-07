@@ -263,7 +263,7 @@ $(document).ready(function () {
         {
           breakpoint: 1100,
           settings: {
-            slidesToShow: 5,
+            slidesToShow: 3,
             slidesToScroll: 3,
             centerMode: false,
           },
@@ -315,7 +315,7 @@ $(document).ready(function () {
         {
           breakpoint: 1100,
           settings: {
-            slidesToShow: 4,
+            slidesToShow: 3,
             centerMode: false,
           },
         },
