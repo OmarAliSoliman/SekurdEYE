@@ -658,13 +658,12 @@ body.modal-open .mm-slideout {
 
 @media (min-height: 900px) {
   .services_cards_index {
-    padding-top: 300px;
+    padding-top: 350px;
     .top_section_parent_img_2 {
       margin-top: -14%;
     }
   }
 }
-
 
 @media (min-height: 1000px) {
   .services_cards_index {
@@ -2566,6 +2565,54 @@ body.modal-open .mm-slideout {
   }
 }
 
+.make_appointment {
+  background-color: #0c0b68;
+  padding: 90px 0;
+  background-color: #0c0b68;
+
+  .section_header {
+    text-align: center;
+    h5 {
+      color: #fff;
+      font-size: 2.5rem;
+      font-weight: 600;
+    }
+  }
+  .contact_us_content {
+    h5 {
+      color: #fff;
+      font-size: 3rem;
+      font-weight: 600;
+      margin-bottom: 52px;
+    }
+  }
+  .contact_info_card {
+    background-image: linear-gradient(
+      to right,
+      rgba(#3e1388, 1),
+      rgba(#052490, 1)
+    );
+    padding: 50px 40px;
+    margin-bottom: 35px;
+    border-radius: 15px;
+    li {
+      // margin: 15px 0;
+      margin-bottom: 30px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    img{
+      width: 50px;
+    }
+    span {
+      color: #fff;
+      margin-left: 10px;
+      width: 70%;
+    }
+  }
+}
+
 .aknowlged_by {
   background-color: #0c0b68;
   .aknowlged_by_wrapper {
@@ -2722,13 +2769,13 @@ body.modal-open .mm-slideout {
   .testemonial .section_header h5 {
     font-size: 2.5rem;
   }
-  .why_choose_us_card{
+  .why_choose_us_card {
     min-height: 480px;
   }
-  .dark_web_montring_header .header_content h5{
+  .dark_web_montring_header .header_content h5 {
     width: 100%;
   }
-  .attack_dark_option_box_advanced ul{
+  .attack_dark_option_box_advanced ul {
     margin-bottom: 75px;
   }
 }
@@ -2858,23 +2905,31 @@ body.modal-open .mm-slideout {
     width: 100%;
     margin-top: 20px;
   }
-  .about_us_web_montring_header .header_content p{
+  .about_us_web_montring_header .header_content p {
     width: 100%;
   }
-  .why_choose_us_card{
+  .why_choose_us_card {
     margin-top: 30px;
   }
-  .aknowlged_by .aknowlged_by_wrapper{
+  .aknowlged_by .aknowlged_by_wrapper {
     padding: 90px 32px;
   }
-  .aknowlged_by .aknowlged_by_wrapper .aknowlged_by_slider img, .our_partners_new .aknowlged_by_slider img{
+  .aknowlged_by .aknowlged_by_wrapper .aknowlged_by_slider img,
+  .our_partners_new .aknowlged_by_slider img {
     width: 150px;
   }
-  .dark_web_montring_header{
+  .dark_web_montring_header {
     height: auto !important;
   }
-  .dark_option_box{
+  .dark_option_box {
     margin-top: 30px;
+  }
+  .calendly-inline-widget.calendly-mobile{
+    height: 600px !important;
+    margin-bottom: 30px;
+  }
+  .make_appointment{
+    padding-bottom: 20px;
   }
 }
 
@@ -3020,33 +3075,39 @@ body.modal-open .mm-slideout {
     width: 50%;
     margin: auto;
   }
-  .order-sm-2 {
+  .ordersm2 {
     order: 2;
   }
-  .order-sm-1 {
+  .ordersm1 {
     order: 1;
   }
   .first_section_img_par {
     padding-top: 10px;
   }
-  .aknowlged_by .aknowlged_by_wrapper .aknowlged_by_slider img, .our_partners_new .aknowlged_by_slider img{
+  .aknowlged_by .aknowlged_by_wrapper .aknowlged_by_slider img,
+  .our_partners_new .aknowlged_by_slider img {
     width: 110px;
   }
-  .dark_option_box{
+  .dark_option_box {
     margin-bottom: 30px;
   }
-  .dark_web_montring_header{
-    .header_img_on_mobile img{
+  .dark_web_montring_header {
+    .header_img_on_mobile img {
       display: none;
     }
   }
-  .attack_dark_option_box_advanced{
+  .attack_dark_option_box_advanced {
     min-height: auto;
   }
-  .dark_option_box .btn_talk{
+  .dark_option_box .btn_talk {
     position: unset;
     transform: none;
     width: 100%;
+  }
+  .calendly-inline-widget.calendly-mobile{
+    height: 500px !important;
+    margin-bottom: 30px;
+    margin-top: 30px;
   }
 }
 
@@ -3067,7 +3128,7 @@ body.modal-open .mm-slideout {
   .custom_header {
     height: 55vh;
   }
-  .about_custom_header{
+  .about_custom_header {
     height: 60vh;
   }
 }

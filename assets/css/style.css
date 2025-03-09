@@ -622,7 +622,7 @@ body.modal-open .mm-slideout {
 
 @media (min-height: 900px) {
   .services_cards_index {
-    padding-top: 300px;
+    padding-top: 350px;
   }
   .services_cards_index .top_section_parent_img_2 {
     margin-top: -14%;
@@ -2315,6 +2315,46 @@ body.modal-open .mm-slideout {
   width: 60%;
 }
 
+.make_appointment {
+  background-color: #0c0b68;
+  padding: 90px 0;
+  background-color: #0c0b68;
+}
+.make_appointment .section_header {
+  text-align: center;
+}
+.make_appointment .section_header h5 {
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+.make_appointment .contact_us_content h5 {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 52px;
+}
+.make_appointment .contact_info_card {
+  background-image: linear-gradient(to right, #3e1388, #052490);
+  padding: 50px 40px;
+  margin-bottom: 35px;
+  border-radius: 15px;
+}
+.make_appointment .contact_info_card li {
+  margin-bottom: 30px;
+}
+.make_appointment .contact_info_card li:last-child {
+  margin-bottom: 0;
+}
+.make_appointment .contact_info_card img {
+  width: 50px;
+}
+.make_appointment .contact_info_card span {
+  color: #fff;
+  margin-left: 10px;
+  width: 70%;
+}
+
 .aknowlged_by {
   background-color: #0c0b68;
 }
@@ -2590,7 +2630,8 @@ body.modal-open .mm-slideout {
   .aknowlged_by .aknowlged_by_wrapper {
     padding: 90px 32px;
   }
-  .aknowlged_by .aknowlged_by_wrapper .aknowlged_by_slider img, .our_partners_new .aknowlged_by_slider img {
+  .aknowlged_by .aknowlged_by_wrapper .aknowlged_by_slider img,
+  .our_partners_new .aknowlged_by_slider img {
     width: 150px;
   }
   .dark_web_montring_header {
@@ -2598,6 +2639,13 @@ body.modal-open .mm-slideout {
   }
   .dark_option_box {
     margin-top: 30px;
+  }
+  .calendly-inline-widget.calendly-mobile {
+    height: 600px !important;
+    margin-bottom: 30px;
+  }
+  .make_appointment {
+    padding-bottom: 20px;
   }
 }
 @media (max-width: 600px) {
@@ -2739,16 +2787,17 @@ body.modal-open .mm-slideout {
     width: 50%;
     margin: auto;
   }
-  .order-sm-2 {
+  .ordersm2 {
     order: 2;
   }
-  .order-sm-1 {
+  .ordersm1 {
     order: 1;
   }
   .first_section_img_par {
     padding-top: 10px;
   }
-  .aknowlged_by .aknowlged_by_wrapper .aknowlged_by_slider img, .our_partners_new .aknowlged_by_slider img {
+  .aknowlged_by .aknowlged_by_wrapper .aknowlged_by_slider img,
+  .our_partners_new .aknowlged_by_slider img {
     width: 110px;
   }
   .dark_option_box {
@@ -2764,6 +2813,11 @@ body.modal-open .mm-slideout {
     position: unset;
     transform: none;
     width: 100%;
+  }
+  .calendly-inline-widget.calendly-mobile {
+    height: 500px !important;
+    margin-bottom: 30px;
+    margin-top: 30px;
   }
 }
 @media (max-width: 500px) {
