@@ -338,8 +338,34 @@ $(document).ready(function () {
     });
   }
 
+  if($(".wrapper_slider_2").length){
+    $(".wrapper_slider_2").slick({
+      arrows: false,
+      fade: true,
+      responsive: [
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 1,
+            arrows: true,
+            centerMode: false,
+          },
+        },
+      ],
+    });
+  }
+
   AOS.init();
 });
+
+if($(".svg_circles").length){
+  $(".svg_circles").on('click', function(){
+    $(this).addClass("active_filter")
+    $(this).siblings().removeClass("active_filter")
+    var attrNum = $(this).attr("data-slick-slid");
+    $('.wrapper_slider_2').slick('slickGoTo', attrNum);
+  })
+}
 
 window.onload = function () {
   Calendly.initBadgeWidget({

@@ -761,6 +761,40 @@ body.modal-open .mm-slideout {
     width: 30%;
     max-width: 30%;
   }
+  svg {
+    width: 100%;
+    max-width: 100%;
+    g {
+      cursor: pointer;
+      opacity: 1 !important;
+    }
+    .active_filter {
+      animation: animate-pulse 3s linear infinite;
+      path {
+        stroke-opacity: 0;
+        transition: all .3s ease-in-out;
+        fill: #fff;
+        fill-opacity: 1;
+      }
+    }
+  }
+}
+
+@keyframes animate-pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 109, 74, 0.7), 0 0 0 0 rgba(255, 109, 74, 0.7);
+  }
+  40% {
+    box-shadow: 0 0 0 50px rgba(255, 109, 74, 0),
+      0 0 0 0 rgba(255, 109, 74, 0.7);
+  }
+  80% {
+    box-shadow: 0 0 0 50px rgba(255, 109, 74, 0),
+      0 0 0 30px rgba(255, 109, 74, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 109, 74, 0), 0 0 0 30px rgba(255, 109, 74, 0);
+  }
 }
 
 .factures_cards {
@@ -1465,6 +1499,7 @@ body.modal-open .mm-slideout {
     height: 56px;
     border-radius: 50%;
     margin-right: 16px;
+    background-color: #fff;
     img {
       border-radius: 50%;
     }
@@ -2602,7 +2637,7 @@ body.modal-open .mm-slideout {
         margin-bottom: 0;
       }
     }
-    img{
+    img {
       width: 50px;
     }
     span {
@@ -2924,11 +2959,11 @@ body.modal-open .mm-slideout {
   .dark_option_box {
     margin-top: 30px;
   }
-  .calendly-inline-widget.calendly-mobile{
+  .calendly-inline-widget.calendly-mobile {
     height: 600px !important;
     margin-bottom: 30px;
   }
-  .make_appointment{
+  .make_appointment {
     padding-bottom: 20px;
   }
 }
@@ -3104,10 +3139,43 @@ body.modal-open .mm-slideout {
     transform: none;
     width: 100%;
   }
-  .calendly-inline-widget.calendly-mobile{
+  .calendly-inline-widget.calendly-mobile {
     height: 500px !important;
     margin-bottom: 30px;
     margin-top: 30px;
+  }
+  .attack_surface_montring_section .fram1{
+    display: none;
+  }
+
+  .attack_surface_montring_section{
+    .wrapper_slider_2{
+      .slick-arrow{
+
+      }
+      .slick-next{
+        top: unset;
+        bottom: -50px;
+        left: 55%;
+        transform: translate(-50%, 0);
+        &::before{
+          content: "\f105";
+          font-weight: 900;
+          font-family: "Font Awesome 5 Free";
+        }
+      }
+      .slick-prev{
+        top: unset;
+        bottom: -50px;
+        left: 45%;
+        transform: translate(-50%, 0);
+        &::before{
+          content: "\f104";
+          font-weight: 900;
+          font-family: "Font Awesome 5 Free";
+        }
+      }
+    }
   }
 }
 
