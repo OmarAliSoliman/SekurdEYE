@@ -473,6 +473,59 @@ body.modal-open .mm-slideout {
       }
     }
   }
+  .submenu_parent {
+    position: relative;
+    .submenu {
+      position: absolute;
+      background-image: linear-gradient(
+        to top right,
+        rgb(15, 17, 129),
+        rgb(21, 21, 150),
+        #9223d7da
+      );
+      width: max-content;
+      padding: 20px;
+      border-radius: 10px;
+      z-index: 2;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-10px);
+      transition: all 0.3s ease-in-out;
+      li {
+        margin: 5px 0;
+        padding: 12px 16px;
+        border-radius: 10px;
+        transition: all 0.3s ease-in-out;
+        a{
+          color: #fff;
+          display: flex;
+          align-items: center;
+          img{
+            margin-right: 5px;
+          }
+        }
+        &:hover {
+          background-image: linear-gradient(
+            to top right,
+            #2448be,
+            #2448be,
+            #8516ca
+          );
+
+          a {
+            color: #fff;
+          }
+        }
+      }
+    }
+    &:hover {
+      .submenu {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+      }
+    }
+  }
   .get_demo {
     // padding: 16px 40px;
     display: flex;
@@ -534,6 +587,7 @@ body.modal-open .mm-slideout {
     top: 50%;
     transform: translate(-50%, -50%);
     z-index: 6;
+    opacity: .7;
   }
   .half_circle_header {
     position: absolute;
@@ -656,6 +710,15 @@ body.modal-open .mm-slideout {
   }
 }
 
+@media (min-height: 600px) {
+  .services_cards_index {
+    // padding-top: 350px;
+    .top_section_parent_img_2 {
+      margin-top: -8%;
+    }
+  }
+}
+
 @media (min-height: 900px) {
   .services_cards_index {
     padding-top: 350px;
@@ -670,6 +733,16 @@ body.modal-open .mm-slideout {
     padding-top: 300px;
     .top_section_parent_img_2 {
       margin-top: -30%;
+    }
+  }
+}
+
+
+@media (min-height: 1001px) {
+  .services_cards_index {
+    padding-top: 400px;
+    .top_section_parent_img_2 {
+      margin-top: -13%;
     }
   }
 }
@@ -772,7 +845,7 @@ body.modal-open .mm-slideout {
       animation: animate-pulse 3s linear infinite;
       path {
         stroke-opacity: 0;
-        transition: all .3s ease-in-out;
+        transition: all 0.3s ease-in-out;
         fill: #fff;
         fill-opacity: 1;
       }
@@ -1195,9 +1268,10 @@ body.modal-open .mm-slideout {
     z-index: 4;
     .head {
       color: #fff;
-      font-size: 3.5rem;
+      font-size: 2rem;
       font-weight: 600;
       margin-bottom: 50px;
+      line-height: 45px;
     }
   }
 }
@@ -1229,7 +1303,7 @@ body.modal-open .mm-slideout {
 
 .why_choose_sekurd {
   background-color: #111163;
-  padding: 80px 0;
+  // padding: 80px 0;
   position: relative;
   .fortify_svg {
     position: absolute;
@@ -1246,6 +1320,52 @@ body.modal-open .mm-slideout {
       text-align: center;
     }
   }
+  .why_choose_sekurd_img {
+  }
+
+  .header_content {
+    position: relative;
+    z-index: 3;
+    h5 {
+      font-size: 3rem;
+      color: #fff;
+      line-height: 65px;
+      font-weight: 600;
+      span {
+        color: #4c9eff;
+      }
+    }
+    p {
+      font-size: 2rem;
+      color: #fff;
+    }
+    a {
+      background-color: #ff9500;
+      border: 1px solid #ff9500;
+      position: relative;
+      z-index: 6;
+      padding: 16px 40px;
+      display: block;
+      width: fit-content;
+      margin-right: auto;
+      border-radius: 45px;
+      color: #fff;
+      margin-top: 24px;
+      margin-bottom: 20px;
+      &:hover {
+        color: #ff9500;
+        border: 1px solid #fff !important;
+        background-color: #fff;
+      }
+    }
+  }
+}
+
+.why_choose_sekurd_in_dark {
+  min-height: 100vh !important;
+  display: flex;
+  align-items: center;
+  padding: 180px 0;
 }
 
 .why_choose_sekurd_card {
@@ -1281,6 +1401,7 @@ body.modal-open .mm-slideout {
     padding: 20px 40px;
     border-radius: 16px;
     position: relative;
+    text-align: left;
     &::after {
       border-radius: 16px;
       position: absolute;
@@ -1296,6 +1417,7 @@ body.modal-open .mm-slideout {
       color: #fff;
       position: relative;
       z-index: 6;
+      text-align: left;
     }
     a {
       background-color: #ff9500;
@@ -1303,7 +1425,9 @@ body.modal-open .mm-slideout {
       position: relative;
       z-index: 6;
       padding: 16px 40px;
-      display: inline-block;
+      display: block;
+      width: fit-content;
+      margin-right: auto;
       border-radius: 45px;
       color: #fff;
       margin-top: 24px;
@@ -1319,6 +1443,7 @@ body.modal-open .mm-slideout {
     z-index: 4;
   }
 }
+
 
 .industries {
   background-color: #111163;
@@ -1349,7 +1474,7 @@ body.modal-open .mm-slideout {
     text-align: center;
     margin-bottom: 90px;
     h5 {
-      font-size: 4rem;
+      font-size: 3rem;
       color: #fff;
       font-weight: 500;
     }
@@ -1572,7 +1697,7 @@ body.modal-open .mm-slideout {
     }
     p {
       color: #fff;
-      font-size: 0.9rem;
+      font-size: 0.8rem;
       margin-bottom: 20px;
     }
     ul {
@@ -1617,6 +1742,7 @@ body.modal-open .mm-slideout {
       color: #fff;
       font-weight: 500;
       margin-bottom: 20px;
+      font-size: 1rem;
     }
     ul {
       li {
@@ -1626,7 +1752,7 @@ body.modal-open .mm-slideout {
           margin: 0 !important;
           color: #fff;
           font-weight: 300;
-          font-size: 0.9rem;
+          font-size: 0.8rem;
           i {
             margin-right: 10px;
             margin-top: 3px;
@@ -1647,14 +1773,20 @@ body.modal-open .mm-slideout {
       color: #fff;
       font-weight: 500;
       margin-bottom: 40px;
+      font-size: 1rem;
     }
     .form_group {
-      height: 65px;
+      height: 60px;
       background-color: #fff;
       border-radius: 24px;
       width: 500px;
       max-width: 100%;
       position: relative;
+      .form-control {
+        &::placeholder {
+          font-size: 0.9rem;
+        }
+      }
       button {
         position: absolute;
         top: 50%;
@@ -1667,6 +1799,7 @@ body.modal-open .mm-slideout {
         border: 1px solid #1429a6;
         background-color: #1429a6;
         color: #fff;
+        font-size: 0.9rem;
         &:hover {
           background-color: #fff;
           color: #1429a6;
@@ -2084,7 +2217,8 @@ body.modal-open .mm-slideout {
 .product_custom_header {
   .header_content {
     h5 {
-      font-size: 3.5rem;
+      font-size: 3rem;
+      line-height: 65px;
     }
     .header_links_demo {
       background-color: #ff9500;
@@ -2312,13 +2446,31 @@ body.modal-open .mm-slideout {
   .dont_wait_wrapper {
     background-image: linear-gradient(
       to right,
-      rgba(#99009e, 0.2),
-      rgba(#071fad, 0.4)
+      rgba(#1429a6, 0.2),
+      rgba(#1429a6, 0.4)
     ) !important;
-    padding: 90px;
+    padding: 30px 45px !important;
     text-align: center;
     &::after {
       display: none;
+    }
+  }
+}
+
+.dont_wait_in_attack{
+  .dont_wait_wrapper{
+    box-shadow: 0 10px 30px rgba(0,0,0,.11);
+    background-image: linear-gradient(
+      to right,
+      rgba(#99009e, 0.2),
+      rgba(#071fad, 0.4)
+    ) !important;
+    h5{
+      text-align: center;
+    }
+    a{
+      margin: auto;
+      margin-top: 25px;
     }
   }
 }
@@ -3144,36 +3296,42 @@ body.modal-open .mm-slideout {
     margin-bottom: 30px;
     margin-top: 30px;
   }
-  .attack_surface_montring_section .fram1{
+  .attack_surface_montring_section .fram1 {
     display: none;
   }
 
-  .attack_surface_montring_section{
-    .wrapper_slider_2{
-      .slick-arrow{
-
+  .attack_surface_montring_section {
+    .wrapper_slider_2 {
+      .slick-arrow {
       }
-      .slick-next{
+      .slick-next {
         top: unset;
         bottom: -50px;
         left: 55%;
         transform: translate(-50%, 0);
-        &::before{
+        &::before {
           content: "\f105";
           font-weight: 900;
           font-family: "Font Awesome 5 Free";
         }
       }
-      .slick-prev{
+      .slick-prev {
         top: unset;
         bottom: -50px;
         left: 45%;
         transform: translate(-50%, 0);
-        &::before{
+        &::before {
           content: "\f104";
           font-weight: 900;
           font-family: "Font Awesome 5 Free";
         }
+      }
+    }
+  }
+  .why_choose_sekurd{
+    .header_content{
+      h5{
+        line-height: normal;
       }
     }
   }

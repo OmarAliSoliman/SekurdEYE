@@ -236,17 +236,21 @@
   <!-- mobile menu -->
   <nav id="menu">
     <ul>
-      <li class="">
-        <a href="#HomeSection">Home</a>
+      <li>
+        <a href="./index.html">Home</a>
       </li>
-      <li class="">
+      <li>
         <a href="./about-us.html">About Us</a>
       </li>
       <li>
-        <a href="./index.html#FeaturesSection">Features</a>
+        <span>Products</span>
+        <ul>
+          <li><a href="./dark-web-montring-page.html">Darkweb monitoring </a></li>
+          <li><a href="./attack-surface-managment-page.html">Attack surface management </a></li>
+        </ul>
       </li>
-      <li class="">
-         <a href="./attack-surface-managment.html">Products</a>
+      <li>
+        <a href="./attack-surface-managment-pricing.html">Price</a>
       </li>
       <li class="active">
         <a class="" href="./contact-us.html">Contact us</a>
@@ -268,16 +272,32 @@
             <div class="linkslis">
               <ul class="navbar_nav d-flex align-items-center list-unstyled">
                 <li class="nav_item">
-                  <a class="nav_link" href="#HomeSection">Home</a>
+                  <a class="nav_link" href="./index.html">Home</a>
                 </li>
                 <li class="nav_item">
                   <a class="nav_link" href="./about-us.html">About Us</a>
                 </li>
-                <li class="nav_item">
-                  <a class="nav_link" href="./index.html#FeaturesSection">Features</a>
+                <li class="nav_item submenu_parent">
+                  <a class="nav_link" href="./attack-surface-managment.html">Products</a>
+                  <div class="submenu">
+                    <ul class="list-unstyled">
+                      <li>
+                        <a href="./dark-web-montring-page.html">
+                          <img src="./assets/images/hat.svg" alt="">
+                          <span>Dark Web Monitoring</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="./attack-surface-managment-page.html">
+                          <img src="./assets/images/Inbox.svg" alt="">
+                          <span>Attack Surface Management</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
                 </li>
                 <li class="nav_item">
-                  <a class="nav_link" href="./attack-surface-managment.html">Products</a>
+                  <a class="nav_link" href="./attack-surface-managment-pricing.html">Price</a>
                 </li>
                 <li class="nav_item active">
                   <a class="nav_link" href="./contact-us.html">Contact us</a>
@@ -377,7 +397,7 @@
   <div class="custom_footer">
     <div class="container-fluid pd-100">
       <div class="row">
-        <div class="col-sm-12 col-md-4 col-lg-3">
+        <div class="col-sm-12 col-md-4 col-lg-2">
           <div class="footer_logo">
             <a href="">
               <img src="./assets/images/logo 1.svg" alt="">
@@ -396,20 +416,28 @@
             </ul>
           </div>
         </div>
-        <div class="col-6 col-md-4 col-lg-2">
+        <div class="col-3 col-md-2 col-lg-1">
           <div class="footer_links">
             <h5>Quick Links</h5>
             <ul class="list-unstyled">
-              <li><a href="#FeaturesSection">Our Features</a></li>
-              <li><a href="./about-us.html" target="_blank">About Us</a></li>
-              <li><a href="./attack-surface-managment.html">Products</a></li>
-              <li><a href="./terms-condition.html">Terms & Conditions</a></li>
+              <li><a href="./about-us.html">About Us</a></li>
+              <li><a href="./attack-surface-managment-pricing.html">Pricing</a></li>
+              <li><a href="./contact-us.html">Contact</a></li>
+             <li><a href="./terms-condition.html">Terms Conditions</a></li>
               <li><a href="./privacy-policy.html">Privacy Policy</a></li>
-              <!-- <li><a href="">Testemonial</a></li> -->
             </ul>
           </div>
         </div>
-        <div class="col-6 col-md-4 col-lg-3">
+        <div class="col-3 col-md-2 col-lg-2">
+          <div class="footer_links">
+            <h5>Products</h5>
+            <ul class="list-unstyled">
+              <li><a href="./dark-web-montring-page.html">Dark web monitoring </a></li>
+              <li><a href="./attack-surface-managment-page.html">Attack Surface management </a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-6 col-md-3 col-lg-3">
           <div class="footer_links">
             <h5>Contact Us</h5>
             <ul class="list-unstyled">
@@ -437,6 +465,7 @@
     </div>
   </div>
 
+  
   <script src="./assets/js/jquery-3.6.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-migrate-3.0.0.min.js"></script>
   <script src="./assets/js/popper.min.js"></script>
